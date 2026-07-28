@@ -18,3 +18,8 @@ print(C.mean(axis=0)[3])    #moyenne matière 4
 
 D = C - C.mean(axis=0)
 print(D)
+print(D.mean(axis=0))
+
+print(C.mean(axis=1, keepdims=True))
+E = C - C.mean(axis=1, keepdims=True)
+print(E)
